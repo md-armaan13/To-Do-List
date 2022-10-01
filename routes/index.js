@@ -8,4 +8,4 @@ const express = require('express');
  router.get('/',homeController.home);// calling home controller when '/' is called
 
 
- module.exports=router;
+ module.exports=router;// export the router so that main index.js use it

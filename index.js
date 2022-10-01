@@ -11,6 +11,13 @@ app.set('view engine','ejs');
 app.set('views','./views');
 
 
+// Adding static files
+app.use(express.static('assets'));
+
+/*
+ REMEMBER THE PATH TO ADD CSS AND JS FILE IN MAIN FILE SHOULD BE ACCORDING TO ASSESTS FOLDER
+ SEE THE PATH IN HOME.EJS
+*/
 
 
 app.listen(port,function(err) {
